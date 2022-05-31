@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In Page</title>
+    <link rel="stylesheet" href="signin.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="left">PHP MYSTERY</div>
+            <div class="links">
+                <a href="#">HOME</a>
+                <a href="#">SERVICES</a>
+                <a href="#">CONTACT</a>
+                <a href="#">ABOUTS</a>
+            </div>
+            <div class="right">
+                <a href="./../REGISTER/Home.html">SIGN UP</a>
+                <a href="#email">SIGN IN</a>
+            </div>
+        </div>
+        <div class="body">
+            <h1 style="margin-top: 0.5em">Log into your account</h1>
+            <form action="./userpage.php" method="POST" class="sign-up sign-in">
+                <label> Email </label>
+                <input type="email" placeholder="Email" name="email" id="email" required />
+                <label> Password </label>
+                <input type="password" placeholder="Password" name="password" min="6" required />
+                <label>User status</label>
+                <select name="userStatus">
+            <option value="Standard User">Standard User</option>
+            <option value="Administrator">Administrator</option>
+          </select>
+                <input type="submit" value="SIGN IN" name="signin" />
+            </form>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+
+</html>

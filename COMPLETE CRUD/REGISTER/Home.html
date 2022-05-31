@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="left">PHP MYSTERY</div>
+            <div class="links">
+                <a href="#">HOME</a>
+                <a href="#">SERVICES</a>
+                <a href="#">CONTACT</a>
+                <a href="#">ABOUTS</a>
+            </div>
+            <div class="right">
+                <a href="#fname">SIGN UP</a>
+                <a href="./../SIGNIN/SignIn.html">SIGN IN</a>
+            </div>
+        </div>
+        <div class="body">
+            <h1 style="margin-top: 0.5em">Fill this form with valid data</h1>
+            <form action="./register.php" method="POST" class="sign-up" enctype="multipart/form-data">
+                <label> First Name </label>
+                <input type="text" placeholder="First Name" name="fname" id="fname" required/>
+                <label> Last Name </label>
+                <input type="text" placeholder="Last Name" name="lname" />
+                <label> Email </label>
+                <input type="email" placeholder="Email" name="email" required/>
+                <label> Password </label>
+                <input type="password" placeholder="Password" name="password" min="6" required />
+                <label> Confirm Password </label>
+                <input type="password" placeholder="Confirm Password" name="cpassword" required/>
+                <label> Gender </label>
+                <div class="gender">
+                    <span> Male<input type="radio" name="gender" value="Male" /> </span>
+                    <span>Female<input type="radio" name="gender" value="Female"
+            /></span>
+                </div>
+                <label> Upload an image </label>
+                <input type="file" name="file" />
+                <label>User Status</label>
+                <select name="userStatus">
+            <option value="Standard User">Standard User</option>
+            <option value="Administrator">Administrator</option>
+          </select>
+                <input type="submit" value="SIGN UP" name="submit" class="sign-up-btn" />
+            </form>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+
+</html>

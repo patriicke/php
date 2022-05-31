@@ -1,0 +1,5 @@
+1.Easter province
+2.Western province
+3.Kigali City province
+4.Southern province
+5.Northern province
